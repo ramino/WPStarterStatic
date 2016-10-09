@@ -1,0 +1,32 @@
+.alert {
+	padding: $alert-padding;
+	border-radius: $base-border-radius;
+
+	&.alert-danger {
+		color: $brand-red;
+		background-color: lighten($brand-red, 30%);
+		border: 1px solid lighten($brand-red, 20%);
+	}
+
+	&.alert-warning {
+		color: $brand-orange;
+		background-color: lighten($brand-orange, 40%);
+		border: 1px solid lighten($brand-orange, 30%);
+	}
+
+	&.alert-info {
+		color: $brand-blue;
+		background-color: lighten($brand-blue, 30%);
+		border: 1px solid lighten($brand-blue, 20%);
+	}
+
+	&.alert-ok {
+		color: $brand-green;
+		background-color: lighten($brand-green, 40%);
+		border: 1px solid lighten($brand-green, 30%);
+	}
+
+	&.alert-small {
+		padding: $alert-padding--small;
+	}
+}

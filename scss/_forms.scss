@@ -1,0 +1,33 @@
+.form-group {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
+    .label-control {
+        display: inline-block;
+        margin-bottom: .25rem;
+        color: $brand-primary;
+        text-transform: uppercase;
+
+        &.label-control--normal {
+            text-transform: inherit;
+        }
+    }
+
+    .input-control {
+        display: block;
+        width: 100%;
+        padding: .5rem .75rem;
+        line-height: 1.25;
+        color: $brand-primary;
+        background-color: #fff;
+        border: 1px solid $brand-light;
+        border-radius: $base-border-radius;
+        font-size: inherit;
+        
+        &:focus {
+            outline: none;
+            border: 1px solid $brand-dark;
+            border-radius: $base-border-radius;
+        }
+    }
+}
