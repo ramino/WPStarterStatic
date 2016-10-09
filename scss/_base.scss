@@ -1,0 +1,21 @@
+// Base styles
+html {
+	font-size: $base-font-size;
+}
+
+body {
+	font-family: $system-font-family;
+	font-weight: $font-weight-normal;
+	color: $base-color;
+}
+
+// Border box
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
