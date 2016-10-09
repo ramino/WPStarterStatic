@@ -1,0 +1,60 @@
+$brand-primary:         #7690A8;
+$brand-light:           #f3f3f3;
+$brand-lighter:         #eee;
+$brand-dark:            #2E3D53;
+$brand-darker:          #78b200;
+
+$brand-red:             crimson;
+$brand-blue:            royalblue;
+$brand-green:           forestgreen;
+$brand-orange:      	darkorange;
+
+$font-weight-normal:    300;
+$font-weight-bold:      500;
+
+/* Typography */
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
+
+$base-color:            #333;
+$base-font-size:        18px;
+$system-font-family:    Arial, serif;
+$base-font-family:      "Roboto", $system-font-family;
+$base-border-radius:    2px;
+
+// h1-h6 sizes
+$h1-font-size:          2rem;
+$h2-font-size:          1.6rem;
+$h3-font-size:          1.4rem;
+$h4-font-size:          1.2rem;
+$h5-font-size:          1rem;
+$h6-font-size:          .8rem;
+
+// h1-h6 font family
+$h1-font-family:        $base-font-family;
+$h2-font-family:        $base-font-family;
+$h3-font-family:        $base-font-family;
+$h4-font-family:        $base-font-family;
+$h5-font-family:        $base-font-family;
+$h6-font-family:        $base-font-family;
+
+// h1 - h6 line heights
+$h1-line-height:        $h1-font-size * 1.7;
+$h2-line-height:        $h2-font-size * 1.7;
+$h3-line-height:        $h3-font-size * 1.7;
+$h4-line-height:        $h4-font-size * 1.7;
+$h5-line-height:        $h5-font-size * 1.7;
+$h6-line-height:        $h6-font-size * 1.7;
+
+/* Buttons */
+$base-btn-radius:       $base-border-radius;
+$base-btn-padding:      6px 12px;
+$base-btn-border:       1px solid lighten($base-color, 10%);
+
+/* Tables */
+$table-primary:         $brand-primary;
+$table-primary--light:  $brand-light;
+$table-secondary:       $brand-lighter;
+
+/* Alerts */
+$alert-padding:         12px 10px;
+$alert-padding--small:  6px 5px;
