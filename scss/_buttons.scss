@@ -1,7 +1,3 @@
-$primary:   #333;
-$red:       #ec2c2c;
-$blue:      #076cbb;
-
 .btn {
     display: inline-block;
     font-weight: 200;
@@ -27,7 +23,10 @@ $blue:      #076cbb;
       //@include tab-focus();
     }
     }
-
+    
+    &:hover {
+        text-decoration: none;
+    }
 
     &.focus {
         text-decoration: none;
@@ -54,10 +53,18 @@ $blue:      #076cbb;
 }
 
 .btn-primary {
-    background-color: $primary;
+    background-color: $brand-primary;
 
     &:hover {
-        background-color: darken($primary, 15%);
+        background-color: darken($brand-primary, 15%);
+    }
+}
+
+.btn-secondary {
+    background-color: $brand-secondary;
+
+    &:hover {
+        background-color: darken($brand-secondary, 15%);
     }
 }
 
@@ -95,13 +102,13 @@ $blue:      #076cbb;
 
 .btn-primary-outline {
     border: 1px solid;
-    border-color: $primary;
-    color: $primary;
+    border-color: $brand-primary;
+    color: $brand-primary;
     text-transform: uppercase;
 
     &:hover {
-        border-color: darken($primary, 15%);
-        color: darken($primary, 15%);
+        border-color: darken($brand-primary, 15%);
+        color: darken($brand-primary, 15%);
     }
 }
 
