@@ -1,12 +1,18 @@
 // Base styles
 html {
-	font-size: $base-font-size;
+    font-size: $base-font-size;
 }
 
 body {
-	font-family: $system-font-family;
-	font-weight: $font-weight-normal;
-	color: $base-color;
+    font-family: $system-font-family;
+    font-weight: $font-weight-normal;
+    color: $base-color;
+    
+    &.flex {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 // Border box

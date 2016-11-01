@@ -1,7 +1,6 @@
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	font-weight: $font-weight-bold;
 
 	small {
 		font-size: 70%;
@@ -13,6 +12,7 @@ h1,
 	font-size: $h1-font-size;
 	font-family: $h1-font-family;
 	line-height: $h1-line-height;
+	font-weight: $h1-font-weight;
 }
 
 h2,
@@ -20,6 +20,7 @@ h2,
 	font-size: $h2-font-size;
 	font-family: $h2-font-family;
 	line-height: $h2-line-height;
+	font-weight: $h2-font-weight;
 }
 
 h3,
@@ -27,6 +28,7 @@ h3,
 	font-size: $h3-font-size;
 	font-family: $h3-font-family;
 	line-height: $h3-line-height;
+	font-weight: $h3-font-weight;
 }
 
 h4,
@@ -34,6 +36,7 @@ h4,
 	font-size: $h4-font-size;
 	font-family: $h4-font-family;
 	line-height: $h4-line-height;
+	font-weight: $h4-font-weight;
 }
 
 h5,
@@ -41,6 +44,7 @@ h5,
 	font-size: $h5-font-size;
 	font-family: $h5-font-family;
 	line-height: $h5-line-height;
+	font-weight: $h5-font-weight;
 }
 
 h6,
@@ -48,6 +52,7 @@ h6,
 	font-size: $h6-font-size;
 	font-family: $h6-font-family;
 	line-height: $h6-line-height;
+	font-weight: $h6-font-weight;
 }
 
 ul {
