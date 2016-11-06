@@ -17,6 +17,7 @@ $font-weight-bold:          500 !default;
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
 
 $base-color:                #333 !default;
+$base-link-color:           $brand-primary !default;
 $base-font-size:            18px !default;
 $system-font-family:        Arial, serif !default;
 $base-font-family:          "Roboto", $system-font-family !default;

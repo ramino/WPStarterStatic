@@ -21,6 +21,16 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: $base-link-color;
+    text-decoration: underline;
+    
+    &:hover {
+        color: $base-link-color;
+        text-decoration: none;
+    }
+}
+
 
 .mb-10 {
     margin-bottom: 10px;
