@@ -1,0 +1,12 @@
+.wpcf7-form-control {
+    @if $wpcf7 == true {
+        @extend .input-control;
+    }
+}
+
+.wpcf7-submit {
+    @if $wpcf7 == true {
+        @extend .btn;
+        @extend .btn-primary;
+	}
+}
