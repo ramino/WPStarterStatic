@@ -98,22 +98,4 @@ table {
 			}
 		}
 	}
-
-	&.table-crimson-primary {
-		th,
-		td {
-			border-bottom: 1px solid $brand-red;
-		}
-
-		th {
-			background-color: $brand-red;
-			color: #fff;
-		}
-	}
-
-	&.table-crimson-secondary {
-		th {
-			background-color: lighten($default, 75%);
-		}
-	}
 }
