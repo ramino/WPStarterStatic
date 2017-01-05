@@ -1,15 +1,50 @@
-@import "scss/reseter";
-@import "scss/variables";
-@import "scss/typo";
+// ---
+// WPStarterStatic styles
 
-@import "scss/base";
-@import "scss/layout";
-@import "scss/site";
+// --
+// Bootstrap mixins
+@import "assets/vendor/bootstrap/scss/mixins";
+//--
 
-@import "scss/buttons";
-@import "scss/lists";
-@import "scss/tables";
-@import "scss/forms";
+// --
+// Base styles
+@import "assets/scss/reseter";
+@import "assets/scss/variables";
+@import "assets/scss/typo";
 
-// Support
-@import "scss/support/wpcf7";
+@import "assets/scss/base";
+@import "assets/scss/layout"; 
+@import "assets/scss/site";
+
+// Modules styles
+@import "assets/scss/modules/alerts";
+@import "assets/scss/modules/buttons";
+@import "assets/scss/modules/banner";
+@import "assets/scss/modules/forms";
+@import "assets/scss/modules/lists";
+@import "assets/scss/modules/nav";
+@import "assets/scss/modules/tables";
+@import "assets/scss/modules/tags";
+
+// Support styles
+@import "assets/scss/support/wpcf7";
+// --
+
+//--
+// Bootstrap modules
+@import "assets/vendor/bootstrap/scss/grid";
+@import "assets/vendor/bootstrap/scss/navbar";
+@import "assets/vendor/bootstrap/scss/transitions";
+
+// Bootstrap utilities
+@import "assets/vendor/bootstrap/scss/utilities/clearfix";
+@import "assets/vendor/bootstrap/scss/utilities/float";
+@import "assets/vendor/bootstrap/scss/utilities/text";
+@import "assets/vendor/bootstrap/scss/utilities/visibility.scss";
+@import "assets/vendor/bootstrap/scss/utilities/text.scss";
+// --
+
+// --
+// Font Awesome syles
+@import "assets/vendor/Font-Awesome/scss/font-awesome"
+// --
