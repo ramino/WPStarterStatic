@@ -1,0 +1,154 @@
+$brand-primary:             #7690A8 !default;
+$brand-secondary:           #f3f3f3 !default;
+$brand-light:               #eee !default;
+$brand-lighter:             #eee !default;
+$brand-dark:                #2E3D53 !default;
+$brand-darker:              #78b200 !default;
+
+$brand-danger:              crimson !default;
+$brand-info:                royalblue !default;
+$brand-success:             forestgreen !default;
+$brand-warning:      	    darkorange !default;
+
+$font-weight-normal:        300 !default;
+$font-weight-bold:          500 !default;
+
+/* Typography */
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
+
+
+
+$base-font-size:            16px !default;
+$system-font-family:        Arial, serif !default;
+$base-font-family:          "Roboto", $system-font-family !default;
+$base-border-radius:        2px !default;
+
+$color-base:                #333 !default;
+$color-link:                $brand-primary !default;
+
+$font-size-html:            16px !default;
+$font-size-base:            1rem;
+
+$line-height-base:          1.4 !default;
+
+$font-weight-light:         300;
+$font-weight-normal:        500;
+$font-weight-bold:          900;
+
+$padding-x:                 .5rem !default;
+$padding-y:                 1rem !default;
+$padding-x-sm:              .25rem !default;
+$padding-y-sm:              .5rem !default;
+
+
+$border-radius:             2px !default;
+
+$text-transform-nav:        uppercase !default;
+
+// h1-h6 sizes
+$font-size-h1:              1.6rem !default;
+$font-size-h2:              1.4rem !default;
+$font-size-h3:              1.2rem !default;
+$font-size-h4:              1rem !default;
+$font-size-h5:              1rem !default;
+$font-size-h6:              1rem !default;
+
+// h1-h6 font family
+$font-family-h1:            $base-font-family !default;
+$font-family-h2:            $base-font-family !default;
+$font-family-h3:            $base-font-family !default;
+$font-family-h4:            $base-font-family !default;
+$font-family-h5:            $base-font-family !default;
+$font-family-h6:            $base-font-family !default;
+
+// Line heights
+
+
+// h1 - h6 font weights
+$font-weight-h1:            $font-weight-normal;
+$font-weight-h2:            $font-weight-normal;
+$font-weight-h3:            $font-weight-normal;
+$font-weight-h4:            $font-weight-normal;
+$font-weight-h5:            $font-weight-normal;
+$font-weight-h6:            $font-weight-bold;
+
+/* Buttons */
+$base-btn-radius:           $base-border-radius !default;
+$base-btn-padding:          6px 12px !default;
+$base-btn-border:           1px solid lighten($color-base, 10%) !default;
+
+/* Tables */
+$table-primary:             $brand-primary !default;
+$table-primary--light:      $brand-light !default;
+$table-secondary:           $brand-lighter !default;
+
+/* Alerts */
+$alert-padding:             12px 10px !default;
+$alert-padding--small:      6px 5px !default;
+
+/* Support */
+$wpcf7:                     true;
+
+/* Banner */
+$site-banner-bg:            rgba(#fff, 0.4) !default;
+$site-banner-title:         $brand-light;
+
+/* Bootstrap */
+$enable-flex:               false !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     30px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+ 
+$navbar-padding-y:          12px !default;
+$navbar-padding-x:          0 !default;
+
+$text-muted:                #666 !default;
+$gray-dark:                 black !default;
+
+// Navbar
+$zindex-navbar-fixed:       2 !default;
+$navbar-toggler-padding-x:  .75rem !default;
+$navbar-toggler-padding-y:  .5rem !default;
+$navbar-toggler-font-size:  1.3rem !default;
+
+// Transtion
+$transition-base:           all .2s ease-in-out !default;
+$transition-fade:           opacity .15s linear !default;
+$transition-collapse:       height .35s ease !default;
+
+// Form
+$padding-input-x:           $padding-x-sm !default;
+$padding-input-y:           $padding-y-sm !default;
+
+// Font Awesome
+$fontAwesome:               true !default;
+$fa-font-path:              "../assets/vendor/Font-Awesome/fonts" !default;

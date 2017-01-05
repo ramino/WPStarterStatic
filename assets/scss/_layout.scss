@@ -1,0 +1,99 @@
+$default:			#222;
+$default-light:	 	#333;
+$defalut-link:		darkgray;
+
+.wpss {
+    &-sidebar {
+        background-color: steelblue;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+        width: inherit;
+        padding: 20px 10px;
+    }
+    
+    &-container {
+        padding: 20px 10px 0 25px; 
+    }
+}
+
+
+.lay-list {
+	font-family: 'Courier';
+	color: #fff;
+
+	a {
+		color: currentColor;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.lay-h1,
+.lay-h2,
+.lay-h3 {
+	font-family: 'Courier';
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-transform: uppercase;
+
+	a {
+		text-decoration: none;
+		color: currentColor;
+	}
+}
+
+.lay-h1 {
+	color: darkturquoise;
+	margin-left: 0;
+
+	span {
+		color: lighten($default, 70%);
+	}
+
+}
+
+.lay-h2 {
+	color: $default;
+	margin-left: 0;
+	border-bottom: 1px solid lighten($default, 80%);
+	padding-bottom: 0;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 1.4rem;
+
+	span {
+		color: #fff;
+		margin-left: -20px;
+		color: steelblue;
+		display: inline-block;
+	}
+}
+
+.lay-h3 {
+	font-size: 1rem;
+	text-transform: none;
+}
+
+.box {
+	//border: 1px solid #ddd;
+	//padding: 20px;
+}
+
+.syntax-highlite {
+	background-color: #f9fafc;
+	border: 1px solid #e0e6ed;
+	padding: 10px;
+	border-radius: 2px;
+	line-height: 22px;
+	color: #657b83;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+	code {
+		font-family: 'Courier';
+	}
+}

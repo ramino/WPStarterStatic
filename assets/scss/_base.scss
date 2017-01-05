@@ -1,0 +1,29 @@
+// Base styles
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    font-family: $system-font-family;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    color: $color-base;
+
+    &.flex {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// Border box
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
