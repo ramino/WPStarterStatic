@@ -1,0 +1,57 @@
+.form-group {
+    margin-bottom: 1rem;
+    font-size: $font-size-base;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .label-control {
+        display: inline-block;
+        margin-bottom: .25rem;
+        color: $brand-primary;
+        text-transform: uppercase;
+
+        &.label-control--normal {
+            text-transform: inherit;
+        }
+    }
+
+    .form-control {
+        display: inline-block;
+        padding: $padding-input-x $padding-input-y;
+        line-height: $line-height-base;
+        color: $brand-primary;
+        background-color: #fff;
+        border: 1px solid $brand-light;
+        border-radius: $base-border-radius;
+        font-size: inherit;
+        vertical-align: middle;
+        
+        &:focus {
+            outline: none;
+            border: 1px solid $brand-dark;
+            border-radius: $base-border-radius;
+        }
+    }
+    
+    .btn {
+        // Fixed inline input and button misaligned
+        border: 1px solid transparent;
+        padding: $padding-input-x $padding-input-y;
+    }
+    
+    &--full {
+        position: relative;
+        
+        .form-control {
+            width: 100%;
+        }
+        
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.site-banner {
+    min-height: 320px;
+    position: relative;
+    
+    &--wrapper {
+        display: block;
+        font-size: 2rem;
+        text-align: center; 
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: $site-banner-bg;
+    }
+
+    &--title {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        color: $site-banner-title;
+    }
+}

@@ -1,0 +1,205 @@
+.btn {
+    display: inline-block;
+    font-weight: $font-weight-normal;
+    text-align: center;
+    font-size: 1rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    font-family: $base-font-family;
+    line-height: $line-height-base;
+    padding: $padding-x $padding-y;
+    border-radius: $base-btn-radius;
+    border: none;
+    //@include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+    @include transition(all .2s ease-in-out);
+
+    &,
+    &:active,
+    &.active {
+    &:focus,
+    &.focus {
+      //@include tab-focus();
+    }
+    }
+    
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.focus {
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+        //@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+
+    &.disabled,
+    &:disabled {
+        //cursor: $cursor-disabled;
+        opacity: .65;
+        //@include box-shadow(none);
+    }
+
+    &[class*="btn-"]:not([class*="-outline"]) {
+        border-bottom: 1px solid rgba(#000, .2);
+        color: #fff;
+    }
+}
+
+.btn-primary {
+    background-color: $brand-primary;
+
+    &:hover {
+        background-color: darken($brand-primary, 15%);
+    }
+}
+
+.btn-secondary {
+    background-color: $brand-secondary;
+
+    &:hover {
+        background-color: darken($brand-secondary, 15%);
+    }
+}
+
+.btn-danger {
+    background-color: $brand-danger;
+
+    &:hover {
+        background-color: darken($brand-danger, 15%);
+    }
+}
+
+.btn-info {
+    background-color: $brand-info;
+
+    &:hover {
+        background-color: darken($brand-info, 15%);
+    }
+}
+
+.btn-success {
+    background-color: $brand-success;
+
+    &:hover {
+        background-color: darken($brand-success, 15%);
+    }
+}
+
+.btn-warning {
+    background-color: $brand-warning;
+
+    &:hover {
+        background-color: darken($brand-warning, 15%);
+    }
+}
+
+.btn-primary-outline {
+    border: 1px solid;
+    border-color: $brand-primary;
+    color: $brand-primary;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-primary, 15%);
+        color: darken($brand-primary, 15%);
+    }
+}
+
+.btn-danger-outline {
+    border: 1px solid;
+    border-color: $brand-danger;
+    color: $brand-danger;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-danger, 15%);
+        color: darken($brand-danger, 15%);
+    }
+}
+
+.btn-info-outline {
+    border: 1px solid;
+    border-color: $brand-info;
+    color: $brand-info;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-info, 15%);
+        color: darken($brand-info, 15%);
+    }
+}
+
+.btn-success-outline {
+    border: 1px solid;
+    border-color: $brand-success;
+    color: $brand-success;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-success, 15%);
+        color: darken($brand-success, 15%);
+    }
+}
+
+.btn-warning-outline {
+    border: 1px solid;
+    border-color: $brand-warning;
+    color: $brand-warning;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-warning, 15%);
+        color: darken($brand-warning, 15%);
+    }
+}
+
+.btn-primary-outline--reversed {
+    border: 1px solid;
+    border-color: $brand-light;
+    color: $brand-light;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-light, 15%);
+        color: darken($brand-light, 15%);
+    }
+}
+
+.btn-small {
+    padding: $padding-x-sm $padding-y-sm;
+    font-size: .85rem;
+}
+
+.btn-group {
+    @include clearfix();
+    
+    > .btn {
+        display: block;
+        float: left;
+        border-right: 1px solid rgba(#000, .2);
+
+        &:first-child {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border-right: none;
+        }
+
+        /*&:not(:first-child),
+        &:not(:last-child) {
+            border-radius: 0;
+        }*/
+    }
+}
