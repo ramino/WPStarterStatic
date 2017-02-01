@@ -113,6 +113,18 @@
     }
 }
 
+.btn-secondary-outline {
+    border: 1px solid;
+    border-color: $brand-secondary;
+    color: $brand-secondary;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($brand-secondary, 15%);
+        color: darken($brand-secondary, 15%);
+    }
+}
+
 .btn-danger-outline {
     border: 1px solid;
     border-color: $brand-danger;
