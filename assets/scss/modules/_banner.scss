@@ -24,3 +24,51 @@
         color: $site-banner-title;
     }
 }
+
+.banner {
+    min-height: 320px;
+    position: relative;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+    &-gradient {
+        @include media-breakpoint-up(sm) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+        
+    &-wrapper {
+        @include media-breakpoint-up(sm) {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+        
+    &-title {
+        font-size: 3rem;
+        color: #fff;
+        margin: 0;
+        
+        a {
+            color: #fff;
+            
+            &:hover {
+                color: rgba(#fff, .6);
+            }
+        }
+    }
+        
+    &-description {
+        color: #fff;
+    }    
+}
