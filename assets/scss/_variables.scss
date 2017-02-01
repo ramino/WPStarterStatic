@@ -16,8 +16,6 @@ $font-weight-bold:          500 !default;
 /* Typography */
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
 
-
-
 $base-font-size:            16px !default;
 $system-font-family:        Arial, serif !default;
 $base-font-family:          "Roboto", $system-font-family !default;
@@ -65,12 +63,12 @@ $font-family-h6:            $base-font-family !default;
 
 
 // h1 - h6 font weights
-$font-weight-h1:            $font-weight-normal;
-$font-weight-h2:            $font-weight-normal;
-$font-weight-h3:            $font-weight-normal;
-$font-weight-h4:            $font-weight-normal;
-$font-weight-h5:            $font-weight-normal;
-$font-weight-h6:            $font-weight-bold;
+$font-weight-h1:            $font-weight-normal !default;
+$font-weight-h2:            $font-weight-normal !default;
+$font-weight-h3:            $font-weight-normal !default;
+$font-weight-h4:            $font-weight-normal !default;
+$font-weight-h5:            $font-weight-normal !default;
+$font-weight-h6:            $font-weight-bold !default;
 
 /* Buttons */
 $base-btn-radius:           $base-border-radius !default;
@@ -130,6 +128,7 @@ $container-max-widths: (
  
 $navbar-padding-y:          12px !default;
 $navbar-padding-x:          0 !default;
+$nav-link:                  $brand-secondary !default;
 
 $text-muted:                #666 !default;
 $gray-dark:                 black !default;
