@@ -39,7 +39,8 @@
 }
 
 .form-control {
-    display: inline-block;
+    display: block;
+    width: 100%;
     padding: $padding-input-x $padding-input-y;
     line-height: $line-height-base;
     color: $brand-primary;
