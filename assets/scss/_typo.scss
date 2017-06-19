@@ -75,7 +75,7 @@ a {
 	color: $color-link;
 
 	&:hover {
-		text-decoration: none;
+		text-decoration: $link-decoration;
 	}
 
 	&.link-danger {

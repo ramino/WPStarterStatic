@@ -14,7 +14,7 @@ $font-weight-normal:        300 !default;
 $font-weight-bold:          500 !default;
 
 /* Typography */
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
+//@import 'https://fonts.googleapis.com/css?family=Roboto:300,500';
 
 $base-font-size:            16px !default;
 $system-font-family:        Arial, serif !default;
@@ -29,9 +29,11 @@ $font-size-base:            1rem;
 
 $line-height-base:          1.4 !default;
 
+$link-decoration:           none !default;
+
 $font-weight-light:         300;
-$font-weight-normal:        500;
-$font-weight-bold:          900;
+$font-weight-normal:        500 !default;
+$font-weight-bold:          900 !default;
 
 $padding-x:                 .5rem !default;
 $padding-y:                 1rem !default;
@@ -85,7 +87,8 @@ $alert-padding:             12px 10px !default;
 $alert-padding--small:      6px 5px !default;
 
 /* Support */
-$wpcf7:                     true;
+$cf7:                       false !default;
+$nf:                        false !default;
 
 /* Banner */
 $site-banner-bg:            rgba(#fff, 0.4) !default;
@@ -120,6 +123,7 @@ $grid-breakpoints: (
 ) !default;
 
 $container-max-widths: (
+  xs: 375px,
   sm: 540px,
   md: 720px,
   lg: 960px,
@@ -145,8 +149,9 @@ $transition-fade:           opacity .15s linear !default;
 $transition-collapse:       height .35s ease !default;
 
 // Form
-$padding-input-x:           $padding-x-sm !default;
-$padding-input-y:           $padding-y-sm !default;
+$padding-input-x:           $padding-x !default;
+$padding-input-y:           $padding-y !default;
+$input-border:              $brand-primary !default;
 
 // Font Awesome
 $fontAwesome:               true !default;

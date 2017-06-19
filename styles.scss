@@ -3,8 +3,9 @@
 
 // --
 // Bootstrap mixins
+@import "assets/vendor/bootstrap/scss/variables";
 @import "assets/vendor/bootstrap/scss/mixins";
-//--
+@import "assets/vendor/bootstrap/scss/mixins/gradients";
 
 // --
 // Base styles
@@ -20,25 +21,31 @@
 @import "assets/scss/modules/alerts";
 @import "assets/scss/modules/buttons";
 @import "assets/scss/modules/banner";
+@import "assets/scss/modules/breadcrumbs";
 @import "assets/scss/modules/forms";
 @import "assets/scss/modules/lists";
+@import "assets/scss/modules/meta";
+@import "assets/scss/modules/menu";
 @import "assets/scss/modules/nav";
 @import "assets/scss/modules/tables";
 @import "assets/scss/modules/tags";
 
 // Support styles
 @import "assets/scss/support/wpcf7";
+@import "assets/scss/support/ninjaforms";
 // --
 
 //--
 // Bootstrap modules
 @import "assets/vendor/bootstrap/scss/grid";
+@import "assets/vendor/bootstrap/scss/nav";
 @import "assets/vendor/bootstrap/scss/navbar";
 @import "assets/vendor/bootstrap/scss/transitions";
 
 // Bootstrap utilities
 @import "assets/vendor/bootstrap/scss/utilities/clearfix";
 @import "assets/vendor/bootstrap/scss/utilities/float";
+@import "assets/vendor/bootstrap/scss/utilities/flex";
 @import "assets/vendor/bootstrap/scss/utilities/text";
 @import "assets/vendor/bootstrap/scss/utilities/visibility.scss";
 @import "assets/vendor/bootstrap/scss/utilities/text.scss";
