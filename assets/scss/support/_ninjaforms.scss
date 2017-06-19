@@ -1,0 +1,12 @@
+.nf-element:not([type="checkbox"]) {
+    @if $nf == true {
+        @extend .form-control;
+    }
+}
+
+.nf-element[type="submit"] {
+    @if $nf == true {
+        @extend .btn;
+        @extend .btn-primary;
+	}
+}
