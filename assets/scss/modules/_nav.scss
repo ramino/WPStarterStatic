@@ -1,18 +1,7 @@
 .nav {
     text-transform: $text-transform-nav;
-    margin: 0;
-    padding: 0;
 
     .menu-item {
-        display: block;
-
-        @include media-breakpoint-up(sm) {
-            display: inline-block;  
-
-            & + .menu-item {
-                margin-left: 10px;
-            }
-        }
 
         &:before {
             content: none;
@@ -20,6 +9,7 @@
         
         a {
             color: $nav-link;
+            display: inline-block;
         }
     }
 }

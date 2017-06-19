@@ -16,11 +16,6 @@
 
     &--title {
         display: inline-block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
         color: $site-banner-title;
     }
 }
@@ -34,7 +29,7 @@
     text-align: center;
     
     &-gradient {
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             position: absolute;
             left: 0;
             top: 0;
@@ -44,7 +39,7 @@
     }
         
     &-wrapper {
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -58,6 +53,7 @@
         font-size: 3rem;
         color: #fff;
         margin: 0;
+        font-family: $base-font-family;
         
         a {
             color: #fff;

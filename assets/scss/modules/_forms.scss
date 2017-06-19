@@ -27,6 +27,97 @@
     }
 }
 
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center; // Prevent shorter elements from growing to same height as others (e.g., small buttons growing to normal sized button height)
+    
+    // Because we use flex, the initial sizing of checkboxes is collapsed and
+    // doesn't occupy the full-width (which is what we want for xs grid tier),
+    // so we force that here.
+    .form-check {
+        width: 100%;
+    }
+    
+      // Kick in the inline
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    // Allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    // Make static controls behave like regular ones
+    .form-control-static {
+      display: inline-block;
+    }
+
+    .input-group {
+      width: auto;
+    }
+
+    .form-control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .form-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .form-check-label {
+      padding-left: 0;
+    }
+    .form-check-input {
+      position: relative;
+      margin-top: 0;
+      margin-right: $form-check-input-margin-x;
+      margin-left: 0;
+    }
+
+    // Custom form controls
+    .custom-control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+    }
+    .custom-control-indicator {
+      position: static;
+      display: inline-block;
+      margin-right: $form-check-input-margin-x; // Flexbox alignment means we lose our HTML space here, so we compensate.
+      vertical-align: text-bottom;
+    }
+
+    // Re-override the feedback icon.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+}
+
 .label-control {
     display: inline-block;
     margin-bottom: .25rem;
@@ -45,7 +136,7 @@
     line-height: $line-height-base;
     color: $brand-primary;
     background-color: #fff;
-    border: 1px solid $brand-light;
+    border: 1px solid $input-border;
     border-radius: $base-border-radius;
     font-size: inherit;
     vertical-align: middle;

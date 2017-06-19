@@ -1,0 +1,101 @@
+$sub-menu-item:         126px;
+
+.menu {
+    &-primary {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+    }
+    
+    &-pills {
+        .menu-item {
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+            }   
+
+            a {
+                @extend .btn;
+                @extend .btn-primary-outline;
+                
+                display: block;
+                
+                &:hover {
+                    color: $brand-primary;
+                    border-color: currentColor;
+                }
+            }
+            
+            &.current-menu-item,
+            &.current-post-parent,
+            &.current-menu-parent {
+                a {
+                    color: $brand-primary;
+                    border-color: $brand-primary;
+                }
+            }
+
+            &-has-children {
+                a {
+                    &:after {
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+    
+    &-toggler {
+        display: block;
+        float: right;
+    
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+        
+        .btn {
+            @extend .btn-primary-outline;
+            
+            width: 100%;
+            background-color: #fff;
+            
+            @include media-breakpoint-up(md) {
+                width: auto;
+            }
+        }
+    }
+    
+    &-posts {
+        margin: 30px 0;
+        text-align: right;
+        
+        a {
+            @extend .btn;
+            @extend .btn-primary;
+            
+            color: #fff;
+        }
+        
+        .screen-reader-text {
+            display: none;
+        }
+    }
+    
+    .collapse {
+        width: 100%;
+        display: none;
+        
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+
+}
+
+
